@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-
+//Write a function that converts all lower-case letters in s into upper-case letters.
 void capitalize(char *s){
 	for(int i = 0; i<strlen(s); i++) {
 		int ascii = (int) s[i];
@@ -10,6 +10,9 @@ void capitalize(char *s){
 	}
 }
 
+
+
+//Write a function that places the first num fibonacci numbers into dest.
 void fibarray(unsigned char *dest, unsigned num) {
 	int temp = 1;
 	int prev = 0;
@@ -23,6 +26,8 @@ void fibarray(unsigned char *dest, unsigned num) {
 }
 
 
+//Write a function that computes and returns xe.
+//You must implement this recursively, not iteratively (do not use for, while, do, or goto).
 long recpow(long x, unsigned char e) {
 	if (e == 0)
         return 1;
@@ -33,6 +38,7 @@ long recpow(long x, unsigned char e) {
 }
 
 
+//Reverse the fist length elements of arr in place.
 void reverse(int *arr, unsigned length) {
 	for(int i=0;i<length/2;i++) {
 		int index = length-1-i;
@@ -43,6 +49,8 @@ void reverse(int *arr, unsigned length) {
 }
 
 
+//Rearrange the first length values of arr in place,
+// such that all of its non-zero values appear in their original order, followed by all of its zero values.
 void push0(int *arr, unsigned length) {
 	int numZeroes = 0;
 	for(int i = 0; i<length;i++) {
